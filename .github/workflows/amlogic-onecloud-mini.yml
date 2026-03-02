@@ -1,4 +1,4 @@
-name: Build OneCloud OpenWrt Ultimate
+name: OneCloud 精简SSR版
 
 on:
   workflow_dispatch:
@@ -162,3 +162,4 @@ EOF
           allowUpdates: true
           artifactErrorsFailBuild: false
           artifacts: openwrt/bin/targets/meson/meson8b/*
+
