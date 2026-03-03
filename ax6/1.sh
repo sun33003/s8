@@ -1,6 +1,5 @@
-chmod -R 777 /etc/aria2
-chmod -R 777 /mnt/sda1/aria2
-chmod -R 777 /mnt/sda1/aria2/download
+chmod -R 777 /etc
+chmod -R 777 /mnt/sda1
 chmod -R 755 /mnt/sda1/share
 
 echo "# Put your custom commands here that should be executed once
@@ -15,7 +14,6 @@ options ndots:0
 EOF
 
 sh /etc/diymo.sh
-sh /etc/aria2.sh
 
 exit 0">/etc/rc.local
 
