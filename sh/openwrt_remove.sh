@@ -4,14 +4,8 @@ rm -rf feeds/kenzo/homeproxy
 rm -rf feeds/kenzo/luci-app-homeproxy
 rm -rf feeds/luci/applications/luci-app-turboacc
 rm -rf feeds/luci/applications/luci-app-kodexplorer
-rm -rf feeds/luci/applications/luci-app-zerotier
 rm -rf feeds/packages/lang/ruby
 rm -rf feeds/packages/net/v2ray-geodata
-rm -rf feeds/packages/net/mosdns
-rm -rf feeds/luci/applications/luci-app-mosdns
-rm -rf feeds/packages/net/aria2
-rm -rf feeds/packages/net/ariang 
-rm -rf feeds/luci/luci-app-aria2
 ###############################
 rm -rf feeds/packages/lang/rust
 rm -rf  package/openwrt-passwall/shadowsocks-rust
@@ -29,4 +23,5 @@ rm -rf  package/openwrt-passwall/shadowsocksr-libev
 #####################################################
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+
 #####################################################
