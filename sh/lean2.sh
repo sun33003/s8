@@ -57,3 +57,12 @@ echo " ------------------------------------------------------------- " >> packag
 echo " ------------------------------------------------------------- " >> package/base-files/files/etc/banner
 
 echo "                                                               " >> package/base-files/files/etc/banner
+
+# echo "===== 删除SSR轮询 ====="
+
+sed -i '/XHR.poll/d' \
+package/*/luci-app-ssr-plus/htdocs/luci-static/resources/view/shadowsocksr/*.js 2>/dev/null || true
+
+sed -i '/setInterval/d' \
+package/*/luci-app-ssr-plus/htdocs/luci-static/resources/view/shadowsocksr/*.js 2>/dev/null || true
+
